@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Варте - Книги, що варті часу, грошей, уваги</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="img/1.jpg" as="image" fetchpriority="high">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo">Варте</a>
+
+      <!-- Бургер-меню для мобільних -->
+      <input type="checkbox" id="burger-toggle" class="burger-toggle">
+      <label for="burger-toggle" class="burger-icon">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a class="nav__link">Здати книгу</a></li>
+          <li class="nav__item"><a class="nav__link">Про нас</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="search-bar">
+          <input type="text" class="search-bar__input" placeholder="Пошук книги за назвою">
+          <button type="button" class="search-bar__button" aria-label="Шукати">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+        </div>
+        <a class="cart-btn" aria-label="Кошик">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Книги, що варті:<br>Часу. Грошей. Уваги</h1>
+          <p class="hero__description">
+            Розвиваємо культуру свідомого читання та підвищуємо освітній рівень суспільства, 
+            рятуючи цінні книжки від забуття, оптимізуючи витрати читачів через систему Trade-In.
+          </p>
+          <div class="hero__buttons">
+            <a class="btn btn--primary">Переглянути каталог</a>
+            <a class="btn btn--outline">Здати книги в Trade-In</a>
+          </div>
+        </div>
+
+        <!-- POPULAR COPIES CARD -->
+        <div class="popular-card">
+          <div class="popular-card__header">
+            <span class="popular-card__title">ПОПУЛЯРНІ ПРИМІРНИКИ</span>
+            <span class="popular-card__count">3 позиції</span>
+          </div>
+          <ul class="popular-card__list">
+            <li class="popular-card__item">
+              <div class="popular-card__info">
+                <span class="popular-card__name">Буття і ніщо</span>
+                <span class="popular-card__author">Жан-Поль Сартр</span>
+              </div>
+              <span class="popular-card__price">340 ₴</span>
+            </li>
+            <li class="popular-card__item">
+              <div class="popular-card__info">
+                <span class="popular-card__name">Логіко-філософський трактат</span>
+                <span class="popular-card__author">Людвіг Віттґенштайн</span>
+              </div>
+              <span class="popular-card__price">280 ₴</span>
+            </li>
+            <li class="popular-card__item">
+              <div class="popular-card__info">
+                <span class="popular-card__name">Міф про Сізіфа</span>
+                <span class="popular-card__author">Альбер Камю</span>
+              </div>
+              <span class="popular-card__price">210 ₴</span>
+            </li>
+          </ul>
+          <div class="popular-card__footer">
+            <a class="popular-card__link">Дивитись весь каталог &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Як це працює</h2>
+        <div class="steps-list">
+          <div class="step-card">
+            <div class="step-card__left">
+              <span class="step-card__number">01</span>
+              <h3 class="step-card__title">Trade-In</h3>
+            </div>
+            <p class="step-card__text">
+              Купуй вживану книгу дешевше за ринок, читай і повертай назад за частину вартості (бонусами на нові покупки чи грошима на картку). Книги не пиляться на полицях, а постійно працюють та переходять до нових шукачів знань.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__left">
+              <span class="step-card__number">02</span>
+              <h3 class="step-card__title">Smart Concierge</h3>
+            </div>
+            <p class="step-card__text">
+              Якщо книги немає в наявності, клієнт залишає заявку у полі пошуку на нашому сайті. Наша команда знаходить її, ретельно перевіряє стан та повідомляє користувача про наявність якнайшвидше.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__left">
+              <span class="step-card__number">03</span>
+              <h3 class="step-card__title">Quality Standard</h3>
+            </div>
+            <p class="step-card__text">
+              Ми особисто відбираємо та оцінюємо кожну книжку. Усі позиції на платформі знаходяться в хорошому, відмінному або ідеальному стані. Жодних вирваних сторінок чи суттєвих дефектів.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER VIDEO -->
+    <div class="banner">
+      <video src="video/2.mp4" poster="img/2.jpg" autoplay loop muted playsinline class="banner__video"></video>
+    </div>
+
+    <!-- WHAT GETS ON SHELVES -->
+    <section class="assortment">
+      <div class="container">
+        <h2 class="section-title">Що потрапляє на полиці</h2>
+        <p class="section-subtitle">
+          Ми не продаємо «все підряд» і не перетворюємося на хаотичну барахолку.<br>
+          Кожна книга на нашій платформі проходить обов'язковий фільтр змістовності.
+        </p>
+
+        <div class="assortment__cards">
+          <div class="assortment-card">
+            <h3 class="assortment-card__title assortment-card__title--check">Входить до асортименту &#10003;</h3>
+            <ul class="assortment-card__list">
+              <li>Нон-фікшн (бізнес, економіка, психологія, наука, саморозвиток)</li>
+              <li>Філософія, соціологія, історія та політологія</li>
+              <li>Академічна література та професійні профільні посібники</li>
+              <li>Інтелектуальна художня література та світова класика (Бакман, Кафка, Камю, Орвелл, Гессе)</li>
+            </ul>
+          </div>
+
+          <div class="assortment-card assortment-card--muted">
+            <h3 class="assortment-card__title assortment-card__title--cross">Відсікається &#10005;</h3>
+            <ul class="assortment-card__list">
+              <li>Бульварні любовні романи без художньої цінності</li>
+              <li>Дешеві одноразові детективи масового тиражу</li>
+              <li>Розважальне «легке» фентезі та поп-літ низької якості</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONALIZED SEARCH -->
+    <section class="search-section">
+      <div class="container">
+        <h2 class="section-title">Персоналізований пошук</h2>
+        <p class="section-subtitle">Напишіть свій настрій або жанр, а ми підберемо те, що вам зараз потрібно.</p>
+
+        <div class="search-form-card">
+          <label for="user-prompt" class="search-form-card__label">Розкажіть про свій настрій, жанр або читацьку потребу</label>
+          <textarea id="user-prompt" class="search-form-card__textarea" placeholder="Наприклад: «Шукаю нон-фікшн про саморозвиток, щоб розібратися у сучасних викликах.»"></textarea>
+          <button type="button" class="btn btn--form">Отримати персональну підбірку</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-subtitle">Відповіді на найпоширеніші запитання.</p>
+
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Які є способи доставки та оплати?</span>
+              <span class="faq-item__icon">&#8250;</span>
+            </summary>
+            <div class="faq-item__content">
+              Доставка здійснюється Новою Поштою та Укрпоштою по всій Україні. Оплата можлива карткою онлайн або при отриманні.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Через скільки днів відправляється замовлення?</span>
+              <span class="faq-item__icon">&#8250;</span>
+            </summary>
+            <div class="faq-item__content">
+              Відправка здійснюється протягом 1–2 робочих днів з моменту оформлення замовлення.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title">Відгуки</h2>
+        <p class="section-subtitle">
+          Користувачі можуть залишити відгук після придбання книги. Ми не фільтруємо відгуки, щоб все було чесно.
+        </p>
+
+        <div class="reviews__grid">
+          <div class="review-card">
+            <h3 class="review-card__author">Анна, 28 років</h3>
+            <p class="review-card__text">
+              «Підбір вийшов дуже точним. Знаходила книгу про саморозвиток, а Варте порекомендували саме те, що мені потрібно було прочитати зараз.»
+            </p>
+            <div class="review-card__meta">
+              <span class="review-card__type">Покупка книги</span>
+              <span class="review-card__rating">&bull; 5 з 5</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <h3 class="review-card__author">Максим, 21 рік</h3>
+            <p class="review-card__text">
+              «Шукав нон-фікшн, щоб розібратися у сучасних викликах. Варте знайшли книгу, якої не було в інших магазинах, і підтримка швидко відповіла на всі питання.»
+            </p>
+            <div class="review-card__meta">
+              <span class="review-card__type">Покупка книги</span>
+              <span class="review-card__rating">&bull; 5 з 5</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <h3 class="review-card__author">Софія, 25 років</h3>
+            <p class="review-card__text">
+              «Після Trade-In повернула частину вартості у вигляді бонусів і купила нову книгу. Сервіс зручний, а підбір книг завжди цікавий.»
+            </p>
+            <div class="review-card__meta">
+              <span class="review-card__type">Повернення книги через Trade-In</span>
+              <span class="review-card__rating">&bull; 5 з 5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА ТА ТАБЛИЦЯ -->
+    <section class="module-contact">
+      <div class="container">
+        <h2 class="section-title">Зв'язатися з Варте</h2>
+        <p class="section-subtitle">Залиште заявку на пошук книги або повернення примірника через Trade-In.</p>
+
+        <div class="module-contact__grid">
+          <form class="feedback-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b3946946-3747-44da-bc1c-4652b8b72141">
+            <input type="hidden" name="subject" value="Нова заявка з сайту Варте">
+
+            <fieldset class="feedback-form__group">
+              <legend>Контактні дані</legend>
+
+              <label for="feedback-name">Ваше ім'я</label>
+              <input id="feedback-name" name="name" type="text" minlength="2" placeholder="Наприклад: Олена" required>
+
+              <label for="feedback-email">E-mail</label>
+              <input id="feedback-email" name="email" type="email" placeholder="name@example.com" required>
+
+              <label for="feedback-phone">Телефон</label>
+              <input id="feedback-phone" name="phone" type="tel" pattern="\+?[0-9 ()-]{10,18}" placeholder="+380 99 123 45 67" required>
+            </fieldset>
+
+            <fieldset class="feedback-form__group">
+              <legend>Що вас цікавить?</legend>
+
+              <label for="feedback-topic">Тема звернення</label>
+              <select id="feedback-topic" name="topic" required>
+                <option value="" selected disabled>Оберіть тему</option>
+                <option value="search">Пошук конкретної книги</option>
+                <option value="trade-in">Повернення через Trade-In</option>
+                <option value="delivery">Доставка та оплата</option>
+              </select>
+
+              <span class="feedback-form__caption">Спосіб зв'язку</span>
+              <div class="feedback-form__radios">
+                <label><input type="radio" name="contact-method" value="phone" required> Дзвінок</label>
+                <label><input type="radio" name="contact-method" value="email"> E-mail</label>
+              </div>
+
+              <label for="feedback-message">Повідомлення</label>
+              <textarea id="feedback-message" name="message" minlength="10" placeholder="Назва книги, автор або питання" required></textarea>
+
+              <label class="feedback-form__agree">
+                <input type="checkbox" name="agreement" required>
+                Погоджуюсь на обробку контактних даних
+              </label>
+            </fieldset>
+
+            <button type="submit" class="btn btn--form">Надіслати заявку</button>
+          </form>
+
+          <div class="books-table-card">
+            <h3>Книги в асортименті</h3>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Назва</th>
+                    <th scope="col">Автор</th>
+                    <th scope="col">Стан</th>
+                    <th scope="col">Ціна</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Буття і ніщо</th>
+                    <td data-label="Автор">Жан-Поль Сартр</td>
+                    <td data-label="Стан">Ідеальний</td>
+                    <td data-label="Ціна">340 ₴</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Міф про Сізіфа</th>
+                    <td data-label="Автор">Альбер Камю</td>
+                    <td data-label="Стан">Добрий</td>
+                    <td data-label="Ціна">210 ₴</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Логіко-філософський трактат</th>
+                    <td data-label="Автор">Людвіг Віттґенштайн</td>
+                    <td data-label="Стан">Відмінний</td>
+                    <td data-label="Ціна">280 ₴</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription">
+      <div class="container">
+        <h2 class="section-title">Пропозиції підписки</h2>
+
+        <div class="subscription__plans">
+          <article class="subscription-card">
+            <h3>Для читання</h3>
+            <p class="subscription-card__description">Один примірник для тих, хто читає спокійно та вибірково.</p>
+            <p class="subscription-card__price">від 210 ₴</p>
+            <ul class="subscription-card__list">
+              <li>Перевірений стан книги</li>
+              <li>Доставка Новою Поштою</li>
+              <li>Повернення Trade-In</li>
+            </ul>
+            <button type="button" class="subscription-button subscription-button--outline">Обрати пакет</button>
+          </article>
+
+          <article class="subscription-card subscription-card--popular">
+            <span class="subscription-card__badge">Найпопулярніше</span>
+            <h3>Для розвитку</h3>
+            <p class="subscription-card__description">Декілька книжок щомісяця для постійного освітнього прогресу.</p>
+            <p class="subscription-card__price">від 420 ₴</p>
+            <ul class="subscription-card__list">
+              <li>До двох книг одночасно</li>
+              <li>Персональна підбірка</li>
+              <li>Бонуси за кожне повернення</li>
+            </ul>
+            <button type="button" class="subscription-button subscription-button--primary">Обрати пакет</button>
+          </article>
+
+          <article class="subscription-card">
+            <h3>Для бібліотеки</h3>
+            <p class="subscription-card__description">Більше вибору для сімей, студій і спільнот активних читачів.</p>
+            <p class="subscription-card__price">від 790 ₴</p>
+            <ul class="subscription-card__list">
+              <li>До п’яти книг одночасно</li>
+              <li>Пріоритетний Smart Concierge</li>
+              <li>Окрема консультація з підбору</li>
+            </ul>
+            <button type="button" class="subscription-button subscription-button--dark">Обрати пакет</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="logo logo--footer">Варте</a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li><a>Каталог</a></li>
+            <li><a>Здати книгу</a></li>
+            <li><a>Про нас</a></li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <a class="social-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            Чат-бот
+          </a>
+          <a class="social-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a class="social-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Варте. Усі права захищені.</p>
+        <div class="footer__links">
+          <a>Політика конфіденційності</a>
+          <a>Умови використання</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const heroImage = new Image();
+    heroImage.src = "img/1.jpg";
+
+    heroImage.onload = () => {
+      document.documentElement.classList.add("hero-ready");
+    };
+
+    heroImage.onerror = () => {
+      document.documentElement.classList.add("hero-ready");
+    };
+  </script>
+</body>
+</html>
